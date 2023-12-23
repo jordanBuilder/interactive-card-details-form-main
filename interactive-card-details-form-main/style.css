@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#complete {
+    width: 90px;
+    height: 90px;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    font-family: monospace;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+}
+
+#bg_main {
+    height: 100%;
+}
+
+.img_front,
+.img_back {
+    position: absolute;
+
+}
+
+.img_front {
+    top: 130px;
+    left: 165px;
+}
+
+.img_back {
+    top: 410px;
+    left: 245px;
+}
+
+.right {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.good {
+    background-color: rgb(140, 225, 140);
+}
+
+.wrong {
+    border: 1px solid red;
+}
+
+.white_circle {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 100%;
+
+}
+
+.lil_circle {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    border-radius: 100%;
+}
+
+.info_card {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+}
+
+.zeros {
+    position: absolute;
+    top: 150px;
+    left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.zero {
+    position: absolute;
+    top: 110px;
+    left: 365px;
+    color: white;
+    font-size: 18px;
+}
+
+small {
+    color: red;
+    font-size: 18px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+}
+
+.hide{
+    display: none;
+}
+.no_hide{
+    width: 400px;
+}
+.no_hide .addDetails{
+    color: rgb(106, 100, 100);
+    font-size: 18px;
+}
+
+#continue {
+    width: 100%;
+}
+
+.information p {
+    text-align: center;
+}
+
+.information p:first-child{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+span {
+    font-size: 18px;
+}
+
+input {
+    width: 380px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    font-size: 14px;
+    transition: 500ms;
+}
+
+input:focus {
+    background-color: rgba(225, 207, 242, 0.8);
+}
+
+.input_flex {
+    display: flex;
+}
+
+.input_flex #month,
+#year {
+    width: 70px;
+}
+
+.double_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.errorCVC {
+    margin-left: 30px;
+}
+
+#cvc {
+    width: 161px;
+}
+
+#year {
+    margin-left: 9px;
+}
+
+#cvc {
+    margin-left: 27px;
+}
+
+.cvc {
+    margin-left: 27px;
+}
+
+button {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+@media(max-width:1191px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 400px;
+       
+    }
+
+    #bg_main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_front {
+        top: 20%;
+        left: 15%;
+        z-index: 1;
+    }
+
+    .img_back {
+        top: 5%;
+        left: 30%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+    }
+}
+
+
+@media(max-width:460px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+
+    .img_front,
+    .img_back {
+        width: 100px;
+    }
+
+    .left {
+        width: 100%;
+        background-color:chocolate;
+    }
+
+    .zeros {
+        font-size: 20px;
+        top: 40%;
+        left: 170%;
+    }
+
+    #bg_main {
+        width: 100%;
+    }
+
+    .img_front {
+        top: 23%;
+        left: 0%;
+        z-index: 1;
+    }
+
+    .img_back {
+        top: 6%;
+        left: 0%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    #bg_main{
+       width: 100vw;
+    }
+    .zeros{
+        background-color: blue;
+        display: flex;
+    }
+}

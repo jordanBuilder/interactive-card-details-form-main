@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <img src="./images/bg-main-desktop.png" alt="image de couleur melangé" id="bg_main">
+      <div class="img_front">
+        <img src="./images/bg-card-front.png" alt="" class="card1">
+        <div class="white_circle">
+        </div>
+        <div class="lil_circle">
+        </div>
+        <p class="zeros">
+          0000 0000 0000 0000
+        </p>
+        <div class="info_card">
+          <p class="name">
+            Jane Appleseed
+          </p>
+          <p class="dater">
+            <span class="mois">
+              00
+            </span>
+            <strong>/</strong>
+            <span class="annee">
+              00
+            </span>
+
+          </p>
+        </div>
+      </div>
+      <div class="img_back">
+        <img src="./images/bg-card-back.png" alt="" class="card2">
+        <p class="zero">
+         000
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="form">
+        <div class="input_container nbr">
+          <span>
+            Cardholder Name
+          </span>
+          <input type="text" name="" id="nameInput" placeholder="e.g. Jane Appleseed">
+          <small class="errorName"></small>
+        </div>
+        <div class="input_container">
+          <span>
+            Card Number
+          </span>
+          <input type="text" name="" id="numberInput" placeholder="e.g. 1234 5678 9123 0000">
+          <small class="errorNumber"></small>
+        </div>
+        <div class="input_flex">
+          <div class="input_container">
+            <span>
+              Exp. Date(MM/YY)
+            </span>
+            <div class="input_flex double_input">
+              <p>
+                <input type="number" name="" id="month" placeholder="MM">
+                <input type="number" name="" id="year" placeholder="YY">
+              </p>
+              <small class="errorDate"></small>
+            </div>
+          </div>
+          <div class="input_container double_input">
+            <span class="cvc">
+              CVC
+            </span>
+            <input type="number" name="" id="cvc" placeholder="e.g. 123">
+            <small class="errorCVC"></small>
+          </div>
+        </div>
+        <button type="button" value="Confirm" id="confirm">Confirm</button>
+      </div>
+      <div class="hide" id="cache">
+        <img src="./images/icon-complete.svg" alt="" id="complete">
+        <div class="information">
+          <p>
+            Thank you!
+          </p>
+          <p class="addDetails">
+            We've added your card details
+          </p>
+        </div>
+        <button id="continue">
+          Continue
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Completed state start -->
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+  <script src="./script.js"></script>
+</body>
+
+</html>
